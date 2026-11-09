@@ -1,0 +1,9 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.env
+*.pem
+dfp_cia_aberta_*.zip
+cache_qualidade/
