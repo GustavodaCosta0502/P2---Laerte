@@ -6,4 +6,4 @@ __pycache__/
 .env
 *.pem
 dfp_cia_aberta_*.zip
-cache_qualidade/
+cache_qualidade/resultados/
