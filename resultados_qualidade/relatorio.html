@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="pt-br"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Factor Investing | Fator Qualidade</title><style>
+    body{margin:0;background:#f7f9fc;color:#142c49;font:15px/1.6 Arial,sans-serif}
+    header{background:#142c49;color:white;padding:46px 6%}
+    header h1{margin:0;font-size:34px;letter-spacing:-.7px}
+    header p{margin:10px 0 0;color:#c1d2e1}
+    main{max-width:1080px;margin:auto;padding:24px}
+    section{background:white;border:1px solid #edf1f5;border-radius:14px;
+            box-shadow:0 5px 20px #142c4909;margin:20px 0;padding:26px 30px}
+    h2{font-size:21px;margin:0 0 14px} p{margin:10px 0;color:#344b61}
+    .indicadores{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}
+    .cartao{background:#edf7f4;border-radius:10px;padding:18px}
+    .cartao small{display:block;color:#52687a}.cartao strong{font-size:26px;color:#168f7a}
+    .dados{border-collapse:collapse;width:100%;display:block;overflow-x:auto;font-size:13px}
+    .dados td,.dados th{padding:9px 11px;border-bottom:1px solid #e8edf2;
+                        text-align:right;white-space:nowrap}
+    .dados th{background:#f0f4f8} img{display:block;width:100%;height:auto;margin:20px 0}
+    .nota{padding:14px 17px;border-left:4px solid #cda452;background:#fcf8ed}
+    footer{padding:24px;text-align:center;color:#6c7b88;font-size:12px}
+    @media(max-width:720px){.indicadores{grid-template-columns:repeat(2,1fr)}
+      section{padding:16px}header h1{font-size:26px}}
+    </style></head>
+<body><header><h1>Factor Investing | Fator Qualidade</h1>
+<p>10 empresas brasileiras · 02/05/2024 até 01/07/2026 · Capital hipotetico R$ 10.000</p>
+</header><main>
+<section><h2>Resultados principais</h2><div class="indicadores">
+<div class="cartao"><small>Quality</small><strong>+23.3%</strong></div>
+<div class="cartao"><small>Low Quality</small><strong>+9.3%</strong></div>
+<div class="cartao"><small>Ibovespa</small><strong>+35.1%</strong></div>
+<div class="cartao"><small>CDI</small><strong>+30.6%</strong></div>
+</div></section>
+<section><h2>Objetivo e metodologia</h2>
+<p>A hipotese e que empresas mais lucrativas, financeiramente seguras e com maior
+conversao do lucro em caixa possam apresentar resultados mais favoraveis.</p>
+<p>Os dados financeiros vieram das DFPs consolidadas de 2023, nas versoes
+entregues ate 30/04/2024. O score atribui 40% a rentabilidade (ROE, ROA, margem),
+30% a seguranca (endividamento, liquidez) e 30% a qualidade dos lucros (accruals).</p>
+<p><b>Quality:</b> PETR4, WEGE3, ABEV3, VALE3, SUZB3.<br><b>Low Quality:</b> VIVT3, LREN3, TOTS3, RADL3, RENT3.</p>
+<p>As carteiras foram iniciadas com cinco acoes e 20% por ativo, sem rebalanceamento.
+O universo foi escolhido intencionalmente por diversidade setorial, sem utilizar
+retornos posteriores a formacao da carteira.</p></section>
+<section><h2>Ranking fundamentalista</h2>
+<table class="dataframe dados">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Empresa</th>
+      <th>Setor</th>
+      <th>ROE</th>
+      <th>ROA</th>
+      <th>Margem liquida</th>
+      <th>Endividamento</th>
+      <th>Liquidez corrente</th>
+      <th>Accruals</th>
+      <th>Score</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>PETR4</th>
+      <td>Petrobras</td>
+      <td>Petroleo</td>
+      <td>0.33</td>
+      <td>0.12</td>
+      <td>0.24</td>
+      <td>0.64</td>
+      <td>0.96</td>
+      <td>-0.09</td>
+      <td>70.56</td>
+    </tr>
+    <tr>
+      <th>WEGE3</th>
+      <td>WEG</td>
+      <td>Industria</td>
+      <td>0.33</td>
+      <td>0.19</td>
+      <td>0.18</td>
+      <td>0.43</td>
+      <td>1.92</td>
+      <td>-0.04</td>
+      <td>69.07</td>
+    </tr>
+    <tr>
+      <th>ABEV3</th>
+      <td>Ambev</td>
+      <td>Bebidas</td>
+      <td>0.19</td>
+      <td>0.11</td>
+      <td>0.19</td>
+      <td>0.40</td>
+      <td>0.89</td>
+      <td>-0.07</td>
+      <td>61.67</td>
+    </tr>
+    <tr>
+      <th>VALE3</th>
+      <td>Vale</td>
+      <td>Mineracao</td>
+      <td>0.20</td>
+      <td>0.09</td>
+      <td>0.19</td>
+      <td>0.57</td>
+      <td>1.28</td>
+      <td>-0.06</td>
+      <td>56.67</td>
+    </tr>
+    <tr>
+      <th>SUZB3</th>
+      <td>Suzano</td>
+      <td>Papel e celulose</td>
+      <td>0.31</td>
+      <td>0.10</td>
+      <td>0.35</td>
+      <td>0.69</td>
+      <td>2.61</td>
+      <td>-0.02</td>
+      <td>54.26</td>
+    </tr>
+    <tr>
+      <th>VIVT3</th>
+      <td>Telefonica Brasil</td>
+      <td>Telecom</td>
+      <td>0.07</td>
+      <td>0.04</td>
+      <td>0.10</td>
+      <td>0.42</td>
+      <td>0.96</td>
+      <td>-0.11</td>
+      <td>52.41</td>
+    </tr>
+    <tr>
+      <th>LREN3</th>
+      <td>Lojas Renner</td>
+      <td>Varejo</td>
+      <td>0.10</td>
+      <td>0.05</td>
+      <td>0.07</td>
+      <td>0.51</td>
+      <td>1.63</td>
+      <td>-0.08</td>
+      <td>50.56</td>
+    </tr>
+    <tr>
+      <th>TOTS3</th>
+      <td>TOTVS</td>
+      <td>Tecnologia</td>
+      <td>0.15</td>
+      <td>0.09</td>
+      <td>0.17</td>
+      <td>0.43</td>
+      <td>2.90</td>
+      <td>-0.02</td>
+      <td>46.30</td>
+    </tr>
+    <tr>
+      <th>RADL3</th>
+      <td>Raia Drogasil</td>
+      <td>Farmacias</td>
+      <td>0.18</td>
+      <td>0.05</td>
+      <td>0.03</td>
+      <td>0.70</td>
+      <td>1.43</td>
+      <td>-0.03</td>
+      <td>28.70</td>
+    </tr>
+    <tr>
+      <th>RENT3</th>
+      <td>Localiza</td>
+      <td>Locacao</td>
+      <td>0.07</td>
+      <td>0.02</td>
+      <td>0.06</td>
+      <td>0.69</td>
+      <td>0.96</td>
+      <td>0.14</td>
+      <td>9.81</td>
+    </tr>
+  </tbody>
+</table></section>
+<section><h2>Retorno e risco</h2><table class="dataframe dados">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Retorno total (%)</th>
+      <th>Retorno anual (%)</th>
+      <th>Volatilidade (%)</th>
+      <th>Max. drawdown (%)</th>
+      <th>Sharpe</th>
+      <th>Valor final (R$)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Quality</th>
+      <td>23.26</td>
+      <td>10.25</td>
+      <td>14.21</td>
+      <td>-17.35</td>
+      <td>-0.12</td>
+      <td>12,326.33</td>
+    </tr>
+    <tr>
+      <th>Low Quality</th>
+      <td>9.31</td>
+      <td>4.24</td>
+      <td>23.93</td>
+      <td>-22.82</td>
+      <td>-0.23</td>
+      <td>10,931.02</td>
+    </tr>
+    <tr>
+      <th>Ibovespa</th>
+      <td>35.06</td>
+      <td>15.06</td>
+      <td>15.59</td>
+      <td>-15.29</td>
+      <td>0.18</td>
+      <td>13,505.84</td>
+    </tr>
+    <tr>
+      <th>CDI</th>
+      <td>30.57</td>
+      <td>13.25</td>
+      <td>0.10</td>
+      <td>0.00</td>
+      <td>—</td>
+      <td>13,056.59</td>
+    </tr>
+  </tbody>
+</table></section>
+<section><h2>Graficos do estudo</h2><img src="01_evolucao.png" alt="Grafico 1">
+<img src="02_ranking.png" alt="Grafico 2">
+<img src="03_retorno.png" alt="Grafico 3">
+<img src="04_risco.png" alt="Grafico 4">
+<img src="05_contribuicao.png" alt="Grafico 5">
+<img src="06_sensibilidade.png" alt="Grafico 6"></section>
+<section><h2>Contribuicao por empresa</h2><table class="dataframe dados">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Empresa</th>
+      <th>Score</th>
+      <th>Peso inicial (%)</th>
+      <th>Retorno individual (%)</th>
+      <th>Contribuicao (p.p.)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>PETR4</th>
+      <td>Petrobras</td>
+      <td>70.56</td>
+      <td>20.00</td>
+      <td>22.77</td>
+      <td>4.55</td>
+    </tr>
+    <tr>
+      <th>WEGE3</th>
+      <td>WEG</td>
+      <td>69.07</td>
+      <td>20.00</td>
+      <td>27.17</td>
+      <td>5.43</td>
+    </tr>
+    <tr>
+      <th>ABEV3</th>
+      <td>Ambev</td>
+      <td>61.67</td>
+      <td>20.00</td>
+      <td>49.42</td>
+      <td>9.88</td>
+    </tr>
+    <tr>
+      <th>VALE3</th>
+      <td>Vale</td>
+      <td>56.67</td>
+      <td>20.00</td>
+      <td>44.38</td>
+      <td>8.88</td>
+    </tr>
+    <tr>
+      <th>SUZB3</th>
+      <td>Suzano</td>
+      <td>54.26</td>
+      <td>20.00</td>
+      <td>-27.43</td>
+      <td>-5.49</td>
+    </tr>
+  </tbody>
+</table></section>
+<section><h2>Teste de concentracao</h2><p>Comparamos as carteiras Top 3, Top 5 e
+Top 7 para observar o efeito do numero de acoes, sem escolher a vencedora
+com conhecimento dos resultados futuros.</p><table class="dataframe dados">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Retorno total (%)</th>
+      <th>Retorno anual (%)</th>
+      <th>Volatilidade (%)</th>
+      <th>Max. drawdown (%)</th>
+      <th>Sharpe</th>
+      <th>Valor final (R$)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Top 3</th>
+      <td>33.12</td>
+      <td>14.28</td>
+      <td>16.47</td>
+      <td>-21.98</td>
+      <td>0.14</td>
+      <td>13,312.14</td>
+    </tr>
+    <tr>
+      <th>Top 5</th>
+      <td>23.26</td>
+      <td>10.25</td>
+      <td>14.21</td>
+      <td>-17.35</td>
+      <td>-0.12</td>
+      <td>12,326.33</td>
+    </tr>
+    <tr>
+      <th>Top 7</th>
+      <td>27.25</td>
+      <td>11.90</td>
+      <td>15.09</td>
+      <td>-12.35</td>
+      <td>-0.00</td>
+      <td>12,724.88</td>
+    </tr>
+  </tbody>
+</table></section>
+<section><h2>Fontes utilizadas</h2><table class="dataframe dados">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Fonte de cotacoes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>WEGE3</th>
+      <td>Yahoo Finance</td>
+    </tr>
+    <tr>
+      <th>VALE3</th>
+      <td>Yahoo Finance</td>
+    </tr>
+    <tr>
+      <th>PETR4</th>
+      <td>Yahoo Finance</td>
+    </tr>
+    <tr>
+      <th>ABEV3</th>
+      <td>Yahoo Finance</td>
+    </tr>
+    <tr>
+      <th>SUZB3</th>
+      <td>Yahoo Finance</td>
+    </tr>
+    <tr>
+      <th>RENT3</th>
+      <td>Yahoo Finance</td>
+    </tr>
+    <tr>
+      <th>RADL3</th>
+      <td>Yahoo Finance</td>
+    </tr>
+    <tr>
+      <th>VIVT3</th>
+      <td>Yahoo Finance</td>
+    </tr>
+    <tr>
+      <th>TOTS3</th>
+      <td>Yahoo Finance</td>
+    </tr>
+    <tr>
+      <th>LREN3</th>
+      <td>Yahoo Finance</td>
+    </tr>
+    <tr>
+      <th>IBOV</th>
+      <td>Yahoo Finance</td>
+    </tr>
+    <tr>
+      <th>CDI</th>
+      <td>SGS 12 via CSV do backtest anterior</td>
+    </tr>
+  </tbody>
+</table></section>
+<section><h2>Conclusao e limites</h2><p>A carteira Quality retornou +23.26%, contra +9.31% da Low Quality (diferenca de +13.95 pontos percentuais). O Ibovespa registrou +35.06% e o CDI, +30.57%. Esses numeros descrevem somente o intervalo estudado e nao provam que o fator tera o mesmo desempenho em outros periodos.</p>
+<p class="nota"><b>Limites:</b> apenas dez empresas e uma unica formacao;
+selecao intencional; risco de atualizacoes nos precos ajustados; resultados
+sem impostos ou custos de transacao; indicadores contabeis podem conter
+itens extraordinarios; Ibovespa tem metodologia propria de retorno total.</p>
+<p>Este relatorio e educacional e nao recomenda comprar ou vender acoes.</p></section>
+</main><footer>Gerado em 09/11/2026 16:29 · Python + CVM + Yahoo/brapi + Banco Central</footer>
+</body></html>
