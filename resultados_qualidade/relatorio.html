@@ -1,403 +1,509 @@
-<!doctype html>
-<html lang="pt-br"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Factor Investing | Fator Qualidade</title><style>
-    body{margin:0;background:#f7f9fc;color:#142c49;font:15px/1.6 Arial,sans-serif}
-    header{background:#142c49;color:white;padding:46px 6%}
-    header h1{margin:0;font-size:34px;letter-spacing:-.7px}
-    header p{margin:10px 0 0;color:#c1d2e1}
-    main{max-width:1080px;margin:auto;padding:24px}
-    section{background:white;border:1px solid #edf1f5;border-radius:14px;
-            box-shadow:0 5px 20px #142c4909;margin:20px 0;padding:26px 30px}
-    h2{font-size:21px;margin:0 0 14px} p{margin:10px 0;color:#344b61}
-    .indicadores{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}
-    .cartao{background:#edf7f4;border-radius:10px;padding:18px}
-    .cartao small{display:block;color:#52687a}.cartao strong{font-size:26px;color:#168f7a}
-    .dados{border-collapse:collapse;width:100%;display:block;overflow-x:auto;font-size:13px}
-    .dados td,.dados th{padding:9px 11px;border-bottom:1px solid #e8edf2;
-                        text-align:right;white-space:nowrap}
-    .dados th{background:#f0f4f8} img{display:block;width:100%;height:auto;margin:20px 0}
-    .nota{padding:14px 17px;border-left:4px solid #cda452;background:#fcf8ed}
-    footer{padding:24px;text-align:center;color:#6c7b88;font-size:12px}
-    @media(max-width:720px){.indicadores{grid-template-columns:repeat(2,1fr)}
-      section{padding:16px}header h1{font-size:26px}}
-    </style></head>
-<body><header><h1>Factor Investing | Fator Qualidade</h1>
-<p>10 empresas brasileiras · 02/05/2024 até 01/07/2026 · Capital hipotetico R$ 10.000</p>
-</header><main>
-<section><h2>Resultados principais</h2><div class="indicadores">
-<div class="cartao"><small>Quality</small><strong>+23.3%</strong></div>
-<div class="cartao"><small>Low Quality</small><strong>+9.3%</strong></div>
-<div class="cartao"><small>Ibovespa</small><strong>+35.1%</strong></div>
-<div class="cartao"><small>CDI</small><strong>+30.6%</strong></div>
-</div></section>
-<section><h2>Objetivo e metodologia</h2>
-<p>A hipotese e que empresas mais lucrativas, financeiramente seguras e com maior
-conversao do lucro em caixa possam apresentar resultados mais favoraveis.</p>
-<p>Os dados financeiros vieram das DFPs consolidadas de 2023, nas versoes
-entregues ate 30/04/2024. O score atribui 40% a rentabilidade (ROE, ROA, margem),
-30% a seguranca (endividamento, liquidez) e 30% a qualidade dos lucros (accruals).</p>
-<p><b>Quality:</b> PETR4, WEGE3, ABEV3, VALE3, SUZB3.<br><b>Low Quality:</b> VIVT3, LREN3, TOTS3, RADL3, RENT3.</p>
-<p>As carteiras foram iniciadas com cinco acoes e 20% por ativo, sem rebalanceamento.
-O universo foi escolhido intencionalmente por diversidade setorial, sem utilizar
-retornos posteriores a formacao da carteira.</p></section>
-<section><h2>Ranking fundamentalista</h2>
-<table class="dataframe dados">
+
+    <!doctype html>
+
+    <html lang="pt-br">
+
+    <head>
+        <meta charset="utf-8">
+
+        <title>
+            Factor Investing - Fator Qualidade
+        </title>
+
+        <style>
+
+            body {
+                font: 15px Arial, sans-serif;
+                max-width: 1060px;
+                margin: 40px auto;
+                color: #203247;
+            }
+
+            table {
+                border-collapse: collapse;
+                width: 100%;
+                font-size: 13px;
+            }
+
+            td, th {
+                padding: 8px;
+                border-bottom: 1px solid #ddd;
+                text-align: left;
+            }
+
+            img {
+                width: 100%;
+                max-width: 970px;
+                margin: 12px 0 24px;
+            }
+
+            h1, h2 {
+                color: #123756;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <h1>
+            Factor Investing — Fator Qualidade
+        </h1>
+
+        <p>
+            Universo: 87 tickers.
+            Empresas com dados válidos: 64.
+        </p>
+
+        <p>
+            Seleção: 27/03/2024.
+            Compra: 28/03/2024.
+            Encerramento: 01/07/2026.
+        </p>
+
+        <p>
+            Investimento inicial: R$ 100.000.
+            Estratégia buy and hold.
+        </p>
+
+        <p>
+            Score: 40% rentabilidade,
+            30% segurança e
+            30% accruals.
+        </p>
+
+        <p>
+            Ações selecionadas:
+            <b>PRIO3, RECV3, WEGE3, GOAU4, GGBR4, PETR4, KLBN11, ABEV3, SUZB3, TOTS3</b>.
+        </p>
+
+        <h2>
+            Resultados principais
+        </h2>
+
+        <table class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>Empresa</th>
-      <th>Setor</th>
-      <th>ROE</th>
-      <th>ROA</th>
-      <th>Margem liquida</th>
-      <th>Endividamento</th>
-      <th>Liquidez corrente</th>
-      <th>Accruals</th>
-      <th>Score</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>PETR4</th>
-      <td>Petrobras</td>
-      <td>Petroleo</td>
-      <td>0.33</td>
-      <td>0.12</td>
-      <td>0.24</td>
-      <td>0.64</td>
-      <td>0.96</td>
-      <td>-0.09</td>
-      <td>70.56</td>
-    </tr>
-    <tr>
-      <th>WEGE3</th>
-      <td>WEG</td>
-      <td>Industria</td>
-      <td>0.33</td>
-      <td>0.19</td>
-      <td>0.18</td>
-      <td>0.43</td>
-      <td>1.92</td>
-      <td>-0.04</td>
-      <td>69.07</td>
-    </tr>
-    <tr>
-      <th>ABEV3</th>
-      <td>Ambev</td>
-      <td>Bebidas</td>
-      <td>0.19</td>
-      <td>0.11</td>
-      <td>0.19</td>
-      <td>0.40</td>
-      <td>0.89</td>
-      <td>-0.07</td>
-      <td>61.67</td>
-    </tr>
-    <tr>
-      <th>VALE3</th>
-      <td>Vale</td>
-      <td>Mineracao</td>
-      <td>0.20</td>
-      <td>0.09</td>
-      <td>0.19</td>
-      <td>0.57</td>
-      <td>1.28</td>
-      <td>-0.06</td>
-      <td>56.67</td>
-    </tr>
-    <tr>
-      <th>SUZB3</th>
-      <td>Suzano</td>
-      <td>Papel e celulose</td>
-      <td>0.31</td>
-      <td>0.10</td>
-      <td>0.35</td>
-      <td>0.69</td>
-      <td>2.61</td>
-      <td>-0.02</td>
-      <td>54.26</td>
-    </tr>
-    <tr>
-      <th>VIVT3</th>
-      <td>Telefonica Brasil</td>
-      <td>Telecom</td>
-      <td>0.07</td>
-      <td>0.04</td>
-      <td>0.10</td>
-      <td>0.42</td>
-      <td>0.96</td>
-      <td>-0.11</td>
-      <td>52.41</td>
-    </tr>
-    <tr>
-      <th>LREN3</th>
-      <td>Lojas Renner</td>
-      <td>Varejo</td>
-      <td>0.10</td>
-      <td>0.05</td>
-      <td>0.07</td>
-      <td>0.51</td>
-      <td>1.63</td>
-      <td>-0.08</td>
-      <td>50.56</td>
-    </tr>
-    <tr>
-      <th>TOTS3</th>
-      <td>TOTVS</td>
-      <td>Tecnologia</td>
-      <td>0.15</td>
-      <td>0.09</td>
-      <td>0.17</td>
-      <td>0.43</td>
-      <td>2.90</td>
-      <td>-0.02</td>
-      <td>46.30</td>
-    </tr>
-    <tr>
-      <th>RADL3</th>
-      <td>Raia Drogasil</td>
-      <td>Farmacias</td>
-      <td>0.18</td>
-      <td>0.05</td>
-      <td>0.03</td>
-      <td>0.70</td>
-      <td>1.43</td>
-      <td>-0.03</td>
-      <td>28.70</td>
-    </tr>
-    <tr>
-      <th>RENT3</th>
-      <td>Localiza</td>
-      <td>Locacao</td>
-      <td>0.07</td>
-      <td>0.02</td>
-      <td>0.06</td>
-      <td>0.69</td>
-      <td>0.96</td>
-      <td>0.14</td>
-      <td>9.81</td>
-    </tr>
-  </tbody>
-</table></section>
-<section><h2>Retorno e risco</h2><table class="dataframe dados">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Retorno total (%)</th>
-      <th>Retorno anual (%)</th>
-      <th>Volatilidade (%)</th>
-      <th>Max. drawdown (%)</th>
-      <th>Sharpe</th>
       <th>Valor final (R$)</th>
+      <th>Retorno acumulado (%)</th>
+      <th>Retorno anualizado (%)</th>
+      <th>Volatilidade anual (%)</th>
+      <th>Máximo drawdown (%)</th>
+      <th>Sharpe</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th>Quality</th>
-      <td>23.26</td>
-      <td>10.25</td>
-      <td>14.21</td>
-      <td>-17.35</td>
-      <td>-0.12</td>
-      <td>12,326.33</td>
-    </tr>
-    <tr>
-      <th>Low Quality</th>
-      <td>9.31</td>
-      <td>4.24</td>
-      <td>23.93</td>
-      <td>-22.82</td>
-      <td>-0.23</td>
-      <td>10,931.02</td>
+      <th>Quality Top 10</th>
+      <td>109818.895</td>
+      <td>9.819</td>
+      <td>4.281</td>
+      <td>14.505</td>
+      <td>-17.390</td>
+      <td>-0.496</td>
     </tr>
     <tr>
       <th>Ibovespa</th>
-      <td>35.06</td>
-      <td>15.06</td>
-      <td>15.59</td>
-      <td>-15.29</td>
-      <td>0.18</td>
-      <td>13,505.84</td>
+      <td>134020.636</td>
+      <td>34.021</td>
+      <td>14.005</td>
+      <td>15.486</td>
+      <td>-15.293</td>
+      <td>0.121</td>
     </tr>
     <tr>
       <th>CDI</th>
-      <td>30.57</td>
-      <td>13.25</td>
-      <td>0.10</td>
-      <td>0.00</td>
-      <td>—</td>
-      <td>13,056.59</td>
+      <td>132026.634</td>
+      <td>32.027</td>
+      <td>13.242</td>
+      <td>0.127</td>
+      <td>0.000</td>
+      <td>0.000</td>
     </tr>
   </tbody>
-</table></section>
-<section><h2>Graficos do estudo</h2><img src="01_evolucao.png" alt="Grafico 1">
-<img src="02_ranking.png" alt="Grafico 2">
-<img src="03_retorno.png" alt="Grafico 3">
-<img src="04_risco.png" alt="Grafico 4">
-<img src="05_contribuicao.png" alt="Grafico 5">
-<img src="06_sensibilidade.png" alt="Grafico 6"></section>
-<section><h2>Contribuicao por empresa</h2><table class="dataframe dados">
+</table>
+
+        <h2>
+            Ranking Top 10
+        </h2>
+
+        <table class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
+      <th>Posição</th>
       <th>Empresa</th>
+      <th>Setor</th>
+      <th>CD_CVM</th>
+      <th>ROE</th>
+      <th>ROA</th>
+      <th>Margem líquida</th>
+      <th>Endividamento</th>
+      <th>Liquidez corrente</th>
+      <th>Accruals</th>
+      <th>Ano DFP</th>
+      <th>DFP recebida</th>
+      <th>Versão DFP</th>
+      <th>Score rentabilidade</th>
+      <th>Score segurança</th>
+      <th>Score lucros</th>
       <th>Score</th>
-      <th>Peso inicial (%)</th>
-      <th>Retorno individual (%)</th>
-      <th>Contribuicao (p.p.)</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th>PETR4</th>
-      <td>Petrobras</td>
-      <td>70.56</td>
-      <td>20.00</td>
-      <td>22.77</td>
-      <td>4.55</td>
+      <th>PRIO3</th>
+      <td>1</td>
+      <td>PETRORIO</td>
+      <td>Petróleo, Gás e Biocombustíveis</td>
+      <td>22187</td>
+      <td>0.373</td>
+      <td>0.183</td>
+      <td>0.435</td>
+      <td>0.510</td>
+      <td>1.529</td>
+      <td>-0.090</td>
+      <td>2023</td>
+      <td>08/03/2024</td>
+      <td>1</td>
+      <td>97.354</td>
+      <td>60.317</td>
+      <td>79.365</td>
+      <td>80.847</td>
+    </tr>
+    <tr>
+      <th>RECV3</th>
+      <td>2</td>
+      <td>PETRORECSA</td>
+      <td>Petróleo, Gás e Biocombustíveis</td>
+      <td>25780</td>
+      <td>0.157</td>
+      <td>0.104</td>
+      <td>0.252</td>
+      <td>0.338</td>
+      <td>1.077</td>
+      <td>-0.100</td>
+      <td>2023</td>
+      <td>05/03/2024</td>
+      <td>1</td>
+      <td>82.011</td>
+      <td>57.937</td>
+      <td>84.127</td>
+      <td>75.423</td>
     </tr>
     <tr>
       <th>WEGE3</th>
+      <td>3</td>
       <td>WEG</td>
-      <td>69.07</td>
-      <td>20.00</td>
-      <td>27.17</td>
-      <td>5.43</td>
+      <td>Bens Industriais</td>
+      <td>5410</td>
+      <td>0.329</td>
+      <td>0.186</td>
+      <td>0.181</td>
+      <td>0.433</td>
+      <td>1.922</td>
+      <td>-0.037</td>
+      <td>2023</td>
+      <td>21/02/2024</td>
+      <td>1</td>
+      <td>89.947</td>
+      <td>80.159</td>
+      <td>46.032</td>
+      <td>73.836</td>
     </tr>
     <tr>
-      <th>ABEV3</th>
-      <td>Ambev</td>
-      <td>61.67</td>
-      <td>20.00</td>
-      <td>49.42</td>
-      <td>9.88</td>
+      <th>GOAU4</th>
+      <td>4</td>
+      <td>GERDAU MET</td>
+      <td>Materiais Básicos</td>
+      <td>8656</td>
+      <td>0.153</td>
+      <td>0.101</td>
+      <td>0.110</td>
+      <td>0.341</td>
+      <td>2.613</td>
+      <td>-0.057</td>
+      <td>2023</td>
+      <td>20/02/2024</td>
+      <td>1</td>
+      <td>71.958</td>
+      <td>92.857</td>
+      <td>57.143</td>
+      <td>73.783</td>
     </tr>
     <tr>
-      <th>VALE3</th>
-      <td>Vale</td>
-      <td>56.67</td>
-      <td>20.00</td>
-      <td>44.38</td>
-      <td>8.88</td>
-    </tr>
-    <tr>
-      <th>SUZB3</th>
-      <td>Suzano</td>
-      <td>54.26</td>
-      <td>20.00</td>
-      <td>-27.43</td>
-      <td>-5.49</td>
-    </tr>
-  </tbody>
-</table></section>
-<section><h2>Teste de concentracao</h2><p>Comparamos as carteiras Top 3, Top 5 e
-Top 7 para observar o efeito do numero de acoes, sem escolher a vencedora
-com conhecimento dos resultados futuros.</p><table class="dataframe dados">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Retorno total (%)</th>
-      <th>Retorno anual (%)</th>
-      <th>Volatilidade (%)</th>
-      <th>Max. drawdown (%)</th>
-      <th>Sharpe</th>
-      <th>Valor final (R$)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>Top 3</th>
-      <td>33.12</td>
-      <td>14.28</td>
-      <td>16.47</td>
-      <td>-21.98</td>
-      <td>0.14</td>
-      <td>13,312.14</td>
-    </tr>
-    <tr>
-      <th>Top 5</th>
-      <td>23.26</td>
-      <td>10.25</td>
-      <td>14.21</td>
-      <td>-17.35</td>
-      <td>-0.12</td>
-      <td>12,326.33</td>
-    </tr>
-    <tr>
-      <th>Top 7</th>
-      <td>27.25</td>
-      <td>11.90</td>
-      <td>15.09</td>
-      <td>-12.35</td>
-      <td>-0.00</td>
-      <td>12,724.88</td>
-    </tr>
-  </tbody>
-</table></section>
-<section><h2>Fontes utilizadas</h2><table class="dataframe dados">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Fonte de cotacoes</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>WEGE3</th>
-      <td>Yahoo Finance</td>
-    </tr>
-    <tr>
-      <th>VALE3</th>
-      <td>Yahoo Finance</td>
+      <th>GGBR4</th>
+      <td>5</td>
+      <td>GERDAU</td>
+      <td>Materiais Básicos</td>
+      <td>3980</td>
+      <td>0.153</td>
+      <td>0.101</td>
+      <td>0.109</td>
+      <td>0.342</td>
+      <td>2.587</td>
+      <td>-0.048</td>
+      <td>2023</td>
+      <td>20/02/2024</td>
+      <td>1</td>
+      <td>70.899</td>
+      <td>90.476</td>
+      <td>52.381</td>
+      <td>71.217</td>
     </tr>
     <tr>
       <th>PETR4</th>
-      <td>Yahoo Finance</td>
+      <td>6</td>
+      <td>PETROBRAS</td>
+      <td>Petróleo, Gás e Biocombustíveis</td>
+      <td>9512</td>
+      <td>0.327</td>
+      <td>0.119</td>
+      <td>0.244</td>
+      <td>0.636</td>
+      <td>0.958</td>
+      <td>-0.086</td>
+      <td>2023</td>
+      <td>25/03/2024</td>
+      <td>2</td>
+      <td>91.005</td>
+      <td>30.952</td>
+      <td>76.190</td>
+      <td>68.545</td>
+    </tr>
+    <tr>
+      <th>KLBN11</th>
+      <td>7</td>
+      <td>KLABIN S/A</td>
+      <td>Materiais Básicos</td>
+      <td>12653</td>
+      <td>0.207</td>
+      <td>0.051</td>
+      <td>0.158</td>
+      <td>0.752</td>
+      <td>2.703</td>
+      <td>-0.086</td>
+      <td>2023</td>
+      <td>07/02/2024</td>
+      <td>1</td>
+      <td>71.958</td>
+      <td>57.143</td>
+      <td>74.603</td>
+      <td>68.307</td>
     </tr>
     <tr>
       <th>ABEV3</th>
-      <td>Yahoo Finance</td>
+      <td>8</td>
+      <td>AMBEV S/A</td>
+      <td>Consumo não Cíclico</td>
+      <td>23264</td>
+      <td>0.187</td>
+      <td>0.113</td>
+      <td>0.188</td>
+      <td>0.396</td>
+      <td>0.892</td>
+      <td>-0.074</td>
+      <td>2023</td>
+      <td>29/02/2024</td>
+      <td>1</td>
+      <td>83.069</td>
+      <td>46.032</td>
+      <td>65.079</td>
+      <td>66.561</td>
     </tr>
     <tr>
       <th>SUZB3</th>
-      <td>Yahoo Finance</td>
-    </tr>
-    <tr>
-      <th>RENT3</th>
-      <td>Yahoo Finance</td>
-    </tr>
-    <tr>
-      <th>RADL3</th>
-      <td>Yahoo Finance</td>
-    </tr>
-    <tr>
-      <th>VIVT3</th>
-      <td>Yahoo Finance</td>
+      <td>9</td>
+      <td>SUZANO S.A.</td>
+      <td>Materiais Básicos</td>
+      <td>13986</td>
+      <td>0.315</td>
+      <td>0.098</td>
+      <td>0.355</td>
+      <td>0.688</td>
+      <td>2.607</td>
+      <td>-0.022</td>
+      <td>2023</td>
+      <td>28/02/2024</td>
+      <td>1</td>
+      <td>89.418</td>
+      <td>62.698</td>
+      <td>33.333</td>
+      <td>64.577</td>
     </tr>
     <tr>
       <th>TOTS3</th>
-      <td>Yahoo Finance</td>
-    </tr>
-    <tr>
-      <th>LREN3</th>
-      <td>Yahoo Finance</td>
-    </tr>
-    <tr>
-      <th>IBOV</th>
-      <td>Yahoo Finance</td>
-    </tr>
-    <tr>
-      <th>CDI</th>
-      <td>SGS 12 via CSV do backtest anterior</td>
+      <td>10</td>
+      <td>TOTVS</td>
+      <td>Tecnologia da Informação</td>
+      <td>19992</td>
+      <td>0.153</td>
+      <td>0.087</td>
+      <td>0.170</td>
+      <td>0.432</td>
+      <td>2.896</td>
+      <td>-0.021</td>
+      <td>2023</td>
+      <td>07/02/2024</td>
+      <td>1</td>
+      <td>72.487</td>
+      <td>88.889</td>
+      <td>28.571</td>
+      <td>64.233</td>
     </tr>
   </tbody>
-</table></section>
-<section><h2>Conclusao e limites</h2><p>A carteira Quality retornou +23.26%, contra +9.31% da Low Quality (diferenca de +13.95 pontos percentuais). O Ibovespa registrou +35.06% e o CDI, +30.57%. Esses numeros descrevem somente o intervalo estudado e nao provam que o fator tera o mesmo desempenho em outros periodos.</p>
-<p class="nota"><b>Limites:</b> apenas dez empresas e uma unica formacao;
-selecao intencional; risco de atualizacoes nos precos ajustados; resultados
-sem impostos ou custos de transacao; indicadores contabeis podem conter
-itens extraordinarios; Ibovespa tem metodologia propria de retorno total.</p>
-<p>Este relatorio e educacional e nao recomenda comprar ou vender acoes.</p></section>
-</main><footer>Gerado em 09/11/2026 16:29 · Python + CVM + Yahoo/brapi + Banco Central</footer>
-</body></html>
+</table>
+
+        <h2>
+            Empresas excluídas
+        </h2>
+
+        <table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Ticker</th>
+      <th>Empresa</th>
+      <th>Motivo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>BBAS3</td>
+      <td>BRASIL</td>
+      <td>Banco, seguradora ou holding financeira: contas não comparáveis</td>
+    </tr>
+    <tr>
+      <td>BBDC3</td>
+      <td>BRADESCO</td>
+      <td>Classe duplicada: mantida outra ação da empresa</td>
+    </tr>
+    <tr>
+      <td>BBDC4</td>
+      <td>BRADESCO</td>
+      <td>Banco, seguradora ou holding financeira: contas não comparáveis</td>
+    </tr>
+    <tr>
+      <td>BBSE3</td>
+      <td>BBSEGURIDADE</td>
+      <td>Banco, seguradora ou holding financeira: contas não comparáveis</td>
+    </tr>
+    <tr>
+      <td>BPAC11</td>
+      <td>BTGP BANCO</td>
+      <td>Banco, seguradora ou holding financeira: contas não comparáveis</td>
+    </tr>
+    <tr>
+      <td>CMIN3</td>
+      <td>CSNMINERACAO</td>
+      <td>Ticker sem correspondência CNPJ/CD_CVM válida</td>
+    </tr>
+    <tr>
+      <td>ELET6</td>
+      <td>ELETROBRAS</td>
+      <td>Classe duplicada: mantida outra ação da empresa</td>
+    </tr>
+    <tr>
+      <td>IRBR3</td>
+      <td>IRBBRASIL RE</td>
+      <td>Banco, seguradora ou holding financeira: contas não comparáveis</td>
+    </tr>
+    <tr>
+      <td>ITSA4</td>
+      <td>ITAUSA</td>
+      <td>Banco, seguradora ou holding financeira: contas não comparáveis</td>
+    </tr>
+    <tr>
+      <td>ITUB4</td>
+      <td>ITAUUNIBANCO</td>
+      <td>Banco, seguradora ou holding financeira: contas não comparáveis</td>
+    </tr>
+    <tr>
+      <td>PETR3</td>
+      <td>PETROBRAS</td>
+      <td>Classe duplicada: mantida outra ação da empresa</td>
+    </tr>
+    <tr>
+      <td>SANB11</td>
+      <td>SANTANDER BR</td>
+      <td>Banco, seguradora ou holding financeira: contas não comparáveis</td>
+    </tr>
+    <tr>
+      <td>VBBR3</td>
+      <td>VIBRA</td>
+      <td>Ticker com vínculo CVM ambíguo</td>
+    </tr>
+    <tr>
+      <td>RAIZ4</td>
+      <td>RAIZEN</td>
+      <td>Nenhuma DFP 2022/2023 entregue até 27/03/2024</td>
+    </tr>
+    <tr>
+      <td>SMTO3</td>
+      <td>SAO MARTINHO</td>
+      <td>Nenhuma DFP 2022/2023 entregue até 27/03/2024</td>
+    </tr>
+    <tr>
+      <td>ASAI3</td>
+      <td>ASSAI</td>
+      <td>DFP 2023: Demonstrativo ausente para a conta 1</td>
+    </tr>
+    <tr>
+      <td>BRAP4</td>
+      <td>BRADESPAR</td>
+      <td>DFP 2023: Ativo, patrimônio, receita ou passivo circulante não positivo</td>
+    </tr>
+    <tr>
+      <td>BRKM5</td>
+      <td>BRASKEM</td>
+      <td>DFP 2023: Demonstrativo ausente para a conta 1</td>
+    </tr>
+    <tr>
+      <td>ELET3</td>
+      <td>ELETROBRAS</td>
+      <td>DFP 2023: Demonstrativo ausente para a conta 1</td>
+    </tr>
+    <tr>
+      <td>SLCE3</td>
+      <td>SLC AGRICOLA</td>
+      <td>DFP 2023: Demonstrativo ausente para a conta 1</td>
+    </tr>
+    <tr>
+      <td>USIM5</td>
+      <td>USIMINAS</td>
+      <td>DFP 2023: Demonstrativo ausente para a conta 1</td>
+    </tr>
+    <tr>
+      <td>AZUL4</td>
+      <td>AZUL</td>
+      <td>DFP 2022: Ativo, patrimônio, receita ou passivo circulante não positivo</td>
+    </tr>
+    <tr>
+      <td>GOLL4</td>
+      <td>GOL</td>
+      <td>DFP 2022: Ativo, patrimônio, receita ou passivo circulante não positivo</td>
+    </tr>
+  </tbody>
+</table>
+
+        <h2>
+            Avisos e limitações
+        </h2>
+
+        <p>
+            Bancos, seguradoras e holding financeira foram excluídos por incompatibilidade dos indicadores contábeis.<br>Empresas sem identificação CVM, sem DFP disponível ou sem contas completas não receberam score.<br>Nenhuma ação com preço congelado entrou no Top 10.
+        </p>
+    <img src='01_evolucao.png' alt='01_evolucao.png'><img src='02_ranking.png' alt='02_ranking.png'><img src='03_retorno.png' alt='03_retorno.png'><img src='04_risco.png' alt='04_risco.png'><img src='05_contribuicao.png' alt='05_contribuicao.png'><img src='06_sensibilidade.png' alt='06_sensibilidade.png'>
+        <p>
+            Fontes: CVM e arquivos de mercado
+            disponibilizados pelo grupo.
+
+            Simulação sem custos operacionais,
+            impostos ou rebalanceamento.
+        </p>
+
+    </body>
+
+    </html>
+    

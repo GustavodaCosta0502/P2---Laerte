@@ -1,0 +1,27 @@
+﻿ticker,empresa,motivo
+ASAI3,ASSAI,"DFP 2023 incompleta: BPA, conta 1: 0 registros"
+AZUL4,AZUL,DFP 2022 incompleta: Denominador nulo ou negativo
+BBAS3,BRASIL,Instituição financeira: contas incompatíveis
+BBDC3,BRADESCO,Classe duplicada
+BBDC4,BRADESCO,Instituição financeira: contas incompatíveis
+BBSE3,BBSEGURIDADE,Instituição financeira: contas incompatíveis
+BPAC11,BTGP BANCO,Instituição financeira: contas incompatíveis
+BRAP4,BRADESPAR,DFP 2023 incompleta: Denominador nulo ou negativo
+BRKM5,BRASKEM,"DFP 2023 incompleta: BPA, conta 1: 0 registros"
+CMIN3,CSNMINERACAO,Sem vínculo ticker/CNPJ na CVM
+CSNA3,SID NACIONAL,Sem vínculo ticker/CNPJ na CVM
+ELET3,ELETROBRAS,"DFP 2023 incompleta: BPA, conta 1: 0 registros"
+ELET6,ELETROBRAS,Classe duplicada
+GOLL4,GOL,DFP 2022 incompleta: Denominador nulo ou negativo
+IRBR3,IRBBRASIL RE,Instituição financeira: contas incompatíveis
+ITSA4,ITAUSA,Instituição financeira: contas incompatíveis
+ITUB4,ITAUUNIBANCO,Instituição financeira: contas incompatíveis
+LWSA3,LOCAWEB,DFP 2022/2023 indisponível no corte
+MRFG3,MARFRIG,Sem vínculo ticker/CNPJ na CVM
+PETR3,PETROBRAS,Classe duplicada
+RAIZ4,RAIZEN,DFP 2022/2023 indisponível no corte
+SANB11,SANTANDER BR,Instituição financeira: contas incompatíveis
+SLCE3,SLC AGRICOLA,"DFP 2023 incompleta: BPA, conta 1: 0 registros"
+SMTO3,SAO MARTINHO,DFP 2022/2023 indisponível no corte
+USIM5,USIMINAS,"DFP 2023 incompleta: BPA, conta 1: 0 registros"
+VBBR3,VIBRA,DFP 2022/2023 indisponível no corte

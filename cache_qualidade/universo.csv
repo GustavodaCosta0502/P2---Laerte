@@ -1,0 +1,88 @@
+ticker,empresa,setor
+ABEV3,AMBEV S/A,Consumo não Cíclico
+ALOS3,ALLOS,Financeiro
+ALPA4,ALPARGATAS,Consumo Cíclico
+ARZZ3,AREZZO CO,Consumo Cíclico
+ASAI3,ASSAI,Consumo não Cíclico
+AZUL4,AZUL,Bens Industriais
+B3SA3,B3,Financeiro
+BBAS3,BRASIL,Financeiro
+BBDC3,BRADESCO,Financeiro
+BBDC4,BRADESCO,Financeiro
+BBSE3,BBSEGURIDADE,Financeiro
+BEEF3,MINERVA,Consumo não Cíclico
+BHIA3,CASAS BAHIA,Consumo Cíclico
+BPAC11,BTGP BANCO,Financeiro
+BRAP4,BRADESPAR,Materiais Básicos
+BRFS3,BRF SA,Consumo não Cíclico
+BRKM5,BRASKEM,Materiais Básicos
+CCRO3,CCR SA,Bens Industriais
+CIEL3,CIELO,não consta no arquivo de 09/2025
+CMIG4,CEMIG,Utilidade Pública
+CMIN3,CSNMINERACAO,Materiais Básicos
+COGN3,COGNA ON,Consumo Cíclico
+CPFE3,CPFL ENERGIA,Utilidade Pública
+CPLE6,COPEL,Utilidade Pública
+CRFB3,CARREFOUR BR,não consta no arquivo de 09/2025
+CSAN3,COSAN,"Petróleo, Gás e Biocombustíveis"
+CSNA3,SID NACIONAL,Materiais Básicos
+CVCB3,CVC BRASIL,Consumo Cíclico
+CYRE3,CYRELA REALT,Consumo Cíclico
+DXCO3,DEXCO,Materiais Básicos
+EGIE3,ENGIE BRASIL,Utilidade Pública
+ELET3,ELETROBRAS,Utilidade Pública
+ELET6,ELETROBRAS,Utilidade Pública
+EMBR3,EMBRAER,Bens Industriais
+ENEV3,ENEVA,Utilidade Pública
+ENGI11,ENERGISA,Utilidade Pública
+EQTL3,EQUATORIAL,Utilidade Pública
+EZTC3,EZTEC,Consumo Cíclico
+FLRY3,FLEURY,Saúde
+GGBR4,GERDAU,Materiais Básicos
+GOAU4,GERDAU MET,Materiais Básicos
+GOLL4,GOL,Bens Industriais
+HAPV3,HAPVIDA,Saúde
+HYPE3,HYPERA,Saúde
+IGTI11,IGUATEMI S.A,Financeiro
+IRBR3,IRBBRASIL RE,Financeiro
+ITSA4,ITAUSA,Financeiro
+ITUB4,ITAUUNIBANCO,Financeiro
+JBSS3,JBS,Consumo não Cíclico
+KLBN11,KLABIN S/A,Materiais Básicos
+LREN3,LOJAS RENNER,Consumo Cíclico
+LWSA3,LOCAWEB,Tecnologia da Informação
+MGLU3,MAGAZ LUIZA,Consumo Cíclico
+MRFG3,MARFRIG,Consumo não Cíclico
+MRVE3,MRV,Consumo Cíclico
+MULT3,MULTIPLAN,Financeiro
+NTCO3,GRUPO NATURA,não consta no arquivo de 09/2025
+PCAR3,P.ACUCAR-CBD,Consumo não Cíclico
+PETR3,PETROBRAS,"Petróleo, Gás e Biocombustíveis"
+PETR4,PETROBRAS,"Petróleo, Gás e Biocombustíveis"
+PETZ3,PETZ,Consumo Cíclico
+PRIO3,PETRORIO,"Petróleo, Gás e Biocombustíveis"
+RADL3,RAIADROGASIL,Saúde
+RAIL3,RUMO S.A.,Bens Industriais
+RAIZ4,RAIZEN,"Petróleo, Gás e Biocombustíveis"
+RDOR3,REDE D OR,Saúde
+RECV3,PETRORECSA,"Petróleo, Gás e Biocombustíveis"
+RENT3,LOCALIZA,Consumo Cíclico
+RRRP3,3R PETROLEUM,"Petróleo, Gás e Biocombustíveis"
+SANB11,SANTANDER BR,Financeiro
+SBSP3,SABESP,Utilidade Pública
+SLCE3,SLC AGRICOLA,Consumo não Cíclico
+SMTO3,SAO MARTINHO,Consumo não Cíclico
+SOMA3,GRUPO SOMA,não consta no arquivo de 09/2025
+SUZB3,SUZANO S.A.,Materiais Básicos
+TAEE11,TAESA,Utilidade Pública
+TIMS3,TIM,Comunicações
+TOTS3,TOTVS,Tecnologia da Informação
+TRPL4,TRAN PAULIST,Utilidade Pública
+UGPA3,ULTRAPAR,"Petróleo, Gás e Biocombustíveis"
+USIM5,USIMINAS,Materiais Básicos
+VALE3,VALE,Materiais Básicos
+VAMO3,VAMOS,Consumo Cíclico
+VBBR3,VIBRA,"Petróleo, Gás e Biocombustíveis"
+VIVT3,TELEF BRASIL,Comunicações
+WEGE3,WEG,Bens Industriais
+YDUQ3,YDUQS PART,Consumo Cíclico

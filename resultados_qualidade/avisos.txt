@@ -1,0 +1,3 @@
+Bancos, seguradoras e holding financeira foram excluídos por incompatibilidade dos indicadores contábeis.
+Empresas sem identificação CVM, sem DFP disponível ou sem contas completas não receberam score.
+Nenhuma ação com preço congelado entrou no Top 10.
